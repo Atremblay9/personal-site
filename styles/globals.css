@@ -150,4 +150,7 @@ p {
   .NavBar a{
     font-size: 1.5rem;
   }
+  .websiteLinks a{
+    font-size: 1.5rem;
+  }
 }

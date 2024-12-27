@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid2';
 export default function NavBar() {
     return(
         <nav class="NavBar">
-            <Grid container spacing={2}>
+            <Grid container spacing={2} style={{ maxWidth: '1200px', margin: '1rem auto' }}>
                 <Grid size={4}>
                     <a href="#">ATX</a>
                 </Grid>
