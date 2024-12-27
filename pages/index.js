@@ -10,6 +10,7 @@ export default function Home() {
       <div class="content">
         
         <HomePage />
+        
       </div>
       </SparkBackground>
     </div>

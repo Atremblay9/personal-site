@@ -32,28 +32,122 @@ nav {
 
 h1 {
   color: var(--NeutralColour);
+
 }
 
 h2 {
   color: var(--accentColour);
+
 }
 
 h3 {
   color: var(--NeutralColour);
+
+}
+p {
+  color: var(--midColour);
+
 }
 
 .NavBar a{
   color: var(--accentColour);
   text-decoration: none;
   padding: 0.5rem;
+  width: fit-content;
 }
 
 .NavBar {
   padding: 1rem;
-  background-color: var(--foreground);
+  background-color: var(--foreground);  
 }
 
 .content {
   padding: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
+.websiteCard {
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
+  padding: 1rem;
+  background-color: #3D314A; 
+  border-radius: 8px;        
+  overflow: hidden;                         
+}
+
+.websiteImage {
+  max-width: 100%;         
+  height: auto;    
+  border-radius: 8px;
+  object-fit: contain; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+
+.websiteLinks{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 1rem, auto;
+}
+
+.websiteLinks a{
+  color: var(--accentColour);
+  background-color: var(--foreground);
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.websiteLinks a:hover{
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.carouselContainer::-webkit-scrollbar {
+  height: 8px;
+}
+
+.carouselContainer::-webkit-scrollbar-track {
+  background: #3D314A; 
+  border-radius: 4px;
+}
+
+.carouselContainer::-webkit-scrollbar-thumb {
+  background-color: #E3B23C; 
+  border-radius: 4px;
+  border: 2px solid #3D314A; 
+}
+
+
+.carouselContainer {
+  scrollbar-width: thin;
+  scrollbar-color: #E3B23C #3D314A;
+}
+
+@media (min-width: 768px) {
+  h1{
+    font-size: 4rem;
+  }
+  h2{
+    font-size: 3rem;
+  }
+  h3{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 1.5rem;
+  }
+  .factTitle{
+    font-size: 2rem;
+  }
+  .factDetails{
+    font-size: 1.2rem;
+  }
+  .NavBar a{
+    font-size: 1.5rem;
+  }
+}

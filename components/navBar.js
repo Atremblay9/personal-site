@@ -5,11 +5,11 @@ export default function NavBar() {
     return(
         <nav class="NavBar">
             <Grid container spacing={2}>
-                <Grid size={6}>
+                <Grid size={4}>
                     <a href="#">ATX</a>
                 </Grid>
-                <Grid size={6}>
-                    <Grid container spacing={2}>
+                <Grid size={8}>
+                    <Grid container spacing={1}>
                     <Grid size={3}>
                         <a href="/">Home</a>
                     </Grid>

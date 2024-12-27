@@ -1,10 +1,12 @@
 import FactsAboutMe from '@/components/facts';
 import SparkBackground from '@/components/sparkEffect';
 import Grid from '@mui/material/Grid2';
+import ProjectCards from '@/components/projectCards';
+import Skills from '@/components/skills';
 
 export default function HomePage() {
     return (
-    <div>
+    <div class="content">
         <SparkBackground />
         <Grid container spacing={2} style={{ height: '50vh' }}>
             <Grid size={6} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
@@ -14,9 +16,10 @@ export default function HomePage() {
             <Grid size={6}>
                 
             </Grid>
+            
         </Grid>
-
-        <Grid container spacing={3} style={{ height: '50vh', margin: '0, auto' }} >
+        
+        <Grid container spacing={3} style={{margin: '0, auto' }} >
             <Grid size={6}>
                 <h3>Overview of Me </h3>
                 <p>Full-Stack Developer</p>
@@ -28,6 +31,11 @@ export default function HomePage() {
                 <FactsAboutMe />
             </Grid>
         </Grid>
+        <Grid size={12}>
+                <Skills />
+        </Grid>
+        <h2>Projects</h2>
+        <ProjectCards />
     </div>
     );
 }

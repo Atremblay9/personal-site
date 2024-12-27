@@ -22,17 +22,18 @@ export default function FactsAboutMe() {
             <ul style={{ listStyle: "none", padding: 0 }}>
                 {facts.map((fact, index) => (
                     <li key={index} style={{ marginBottom: "1rem", cursor: "pointer" }}>
-                        <div
+                        <div className="factTitle"
                             onClick={() => toggleFact(index)}
                             style={{
                                 fontWeight: "bold",
                                 color: "#E3B23C",
+                                
                             }}
                         >
                             {fact.title}
                         </div>
                         {expandedFact === index && (
-                            <div style={{ marginTop: "0.5rem", color: "#FFFFC7" }}>
+                            <div className="factDetails" style={{ marginTop: "0.5rem", color: "#FFFFC7" }}>
                                 {fact.details}
                             </div>
                         )}
