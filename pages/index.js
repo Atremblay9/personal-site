@@ -1,9 +1,17 @@
-
+import NavBar from "@/components/navBar";
+import HomePage from "@/components/homePage";
+import SparkBackground from "@/components/sparkEffect";
 
 export default function Home() {
   return (
     <div>
-      <h1>Home Page</h1>
+      <NavBar />
+      <SparkBackground>
+      <div class="content">
+        
+        <HomePage />
+      </div>
+      </SparkBackground>
     </div>
   );
 }

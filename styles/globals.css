@@ -1,21 +1,59 @@
 
 
 :root {
-  --background: #ffffff;
+  --background: #1A1423
   --foreground: #171717;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1A1423;
+    --foreground: #3D314A;
+    --midColour: #684756;
+    --accentColour: #E3B23C;
+    --NeutralColour: #FFFFC7;
   }
 }
 
 
 
 body {
-  color: var(--foreground);
+  color: var(--midColour);
   background: var(--background);
   font-family: 'Space Grotesk', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+nav {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+h1 {
+  color: var(--NeutralColour);
+}
+
+h2 {
+  color: var(--accentColour);
+}
+
+h3 {
+  color: var(--NeutralColour);
+}
+
+.NavBar a{
+  color: var(--accentColour);
+  text-decoration: none;
+  padding: 0.5rem;
+}
+
+.NavBar {
+  padding: 1rem;
+  background-color: var(--foreground);
+}
+
+.content {
+  padding: 1rem;
+}
+
