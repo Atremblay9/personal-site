@@ -52,10 +52,6 @@ p {
   background-color: var(--foreground);  
 }
 
-.footer {
-  padding: 1rem;
-  background-color: var(--foreground);  
-}
 
 .content {
   padding: 1rem;
@@ -124,6 +120,19 @@ p {
   scrollbar-color: #E3B23C #3D314A;
 }
 
+
+.footer {
+  padding: 1rem;
+  background-color: var(--foreground);  
+}
+
+.footer p {
+  color: var(--accentColour);
+}
+
+.footer .footerInfo {
+  color: var(--midColour);
+}
 .socials {
   display: flex;
   gap: 1rem;

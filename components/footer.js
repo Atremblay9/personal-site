@@ -5,7 +5,7 @@ export default function Footer() {
     return (
         <footer className="footer">
             <div className="footerContent">
-                <Grid container spacing={2} style={{ maxWidth: '1200px', margin: '1rem auto' }}>
+                <Grid container spacing={2} style={{ maxWidth: '1200px', margin: '1rem auto', padding: '0 1rem' }}>
                     
                     <Grid size={6}>
                         <h3>Contact Me</h3>
@@ -22,7 +22,7 @@ export default function Footer() {
                     </Grid>      
                 </Grid>
                 <Grid size={12} style={{ textAlign: 'center' }}>
-                        <p>This Website was design and programmed by Amélie Tremblay</p>
+                        <p className="footerInfo">This Website was design and programmed by Amélie Tremblay</p>
                 </Grid> 
             </div>
         </footer>
