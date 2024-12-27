@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 export default function Skills() {
     const skills = [
@@ -25,6 +25,30 @@ export default function Skills() {
 
     const skillsContainerRef = useRef(null);
     const environmentsContainerRef = useRef(null);
+    const [skillsScrollable, setSkillsScrollable] = useState(false);
+    const [environmentsScrollable, setEnvironmentsScrollable] = useState(false);
+
+    // Check if the container is scrollable
+    const checkScrollable = (ref, setState) => {
+        if (ref.current) {
+            setState(ref.current.scrollWidth > ref.current.clientWidth);
+        }
+    };
+
+    useEffect(() => {
+        // Check scrollable state on mount
+        checkScrollable(skillsContainerRef, setSkillsScrollable);
+        checkScrollable(environmentsContainerRef, setEnvironmentsScrollable);
+
+        // Check again on window resize
+        const handleResize = () => {
+            checkScrollable(skillsContainerRef, setSkillsScrollable);
+            checkScrollable(environmentsContainerRef, setEnvironmentsScrollable);
+        };
+
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
 
     const scrollCarousel = (ref, direction) => {
         if (ref.current) {
@@ -77,84 +101,92 @@ export default function Skills() {
             {/* Skills Section */}
             <div style={{ position: "relative", width: "100%", overflow: "hidden", marginBottom: "2rem" }}>
                 <h2 style={{ color: "#3D314A", textAlign: "center" }}>Skills</h2>
-                <button
-                    onClick={() => scrollCarousel(skillsContainerRef, -1)}
-                    style={{
-                        position: "absolute",
-                        left: "0",
-                        top: "50%",
-                        transform: "translateY(-50%)",
-                        backgroundColor: "rgba(0, 0, 0, 0.5)",
-                        color: "white",
-                        border: "none",
-                        borderRadius: "50%",
-                        width: "40px",
-                        height: "40px",
-                        cursor: "pointer",
-                    }}
-                >
-                    &#9664;
-                </button>
-                <button
-                    onClick={() => scrollCarousel(skillsContainerRef, 1)}
-                    style={{
-                        position: "absolute",
-                        right: "0",
-                        top: "50%",
-                        transform: "translateY(-50%)",
-                        backgroundColor: "rgba(0, 0, 0, 0.5)",
-                        color: "white",
-                        border: "none",
-                        borderRadius: "50%",
-                        width: "40px",
-                        height: "40px",
-                        cursor: "pointer",
-                    }}
-                >
-                    &#9654;
-                </button>
+                {skillsScrollable && (
+                    <>
+                        <button
+                            onClick={() => scrollCarousel(skillsContainerRef, -1)}
+                            style={{
+                                position: "absolute",
+                                left: "0",
+                                top: "50%",
+                                transform: "translateY(-50%)",
+                                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                                color: "white",
+                                border: "none",
+                                borderRadius: "50%",
+                                width: "40px",
+                                height: "40px",
+                                cursor: "pointer",
+                            }}
+                        >
+                            &#9664;
+                        </button>
+                        <button
+                            onClick={() => scrollCarousel(skillsContainerRef, 1)}
+                            style={{
+                                position: "absolute",
+                                right: "0",
+                                top: "50%",
+                                transform: "translateY(-50%)",
+                                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                                color: "white",
+                                border: "none",
+                                borderRadius: "50%",
+                                width: "40px",
+                                height: "40px",
+                                cursor: "pointer",
+                            }}
+                        >
+                            &#9654;
+                        </button>
+                    </>
+                )}
                 {renderCarousel(skills, skillsContainerRef)}
             </div>
 
             {/* Environments Section */}
             <div style={{ position: "relative", width: "100%", overflow: "hidden", maxWidth: "600px", margin: "0 auto" }}>
                 <h2 style={{ color: "#3D314A", textAlign: "center" }}>Environments</h2>
-                <button
-                    onClick={() => scrollCarousel(environmentsContainerRef, -1)}
-                    style={{
-                        position: "absolute",
-                        left: "0",
-                        top: "50%",
-                        transform: "translateY(-50%)",
-                        backgroundColor: "rgba(0, 0, 0, 0.5)",
-                        color: "white",
-                        border: "none",
-                        borderRadius: "50%",
-                        width: "40px",
-                        height: "40px",
-                        cursor: "pointer",
-                    }}
-                >
-                    &#9664;
-                </button>
-                <button
-                    onClick={() => scrollCarousel(environmentsContainerRef, 1)}
-                    style={{
-                        position: "absolute",
-                        right: "0",
-                        top: "50%",
-                        transform: "translateY(-50%)",
-                        backgroundColor: "rgba(0, 0, 0, 0.5)",
-                        color: "white",
-                        border: "none",
-                        borderRadius: "50%",
-                        width: "40px",
-                        height: "40px",
-                        cursor: "pointer",
-                    }}
-                >
-                    &#9654;
-                </button>
+                {environmentsScrollable && (
+                    <>
+                        <button
+                            onClick={() => scrollCarousel(environmentsContainerRef, -1)}
+                            style={{
+                                position: "absolute",
+                                left: "0",
+                                top: "50%",
+                                transform: "translateY(-50%)",
+                                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                                color: "white",
+                                border: "none",
+                                borderRadius: "50%",
+                                width: "40px",
+                                height: "40px",
+                                cursor: "pointer",
+                            }}
+                        >
+                            &#9664;
+                        </button>
+                        <button
+                            onClick={() => scrollCarousel(environmentsContainerRef, 1)}
+                            style={{
+                                position: "absolute",
+                                right: "0",
+                                top: "50%",
+                                transform: "translateY(-50%)",
+                                backgroundColor: "rgba(0, 0, 0, 0.5)",
+                                color: "white",
+                                border: "none",
+                                borderRadius: "50%",
+                                width: "40px",
+                                height: "40px",
+                                cursor: "pointer",
+                            }}
+                        >
+                            &#9654;
+                        </button>
+                    </>
+                )}
                 {renderCarousel(environments, environmentsContainerRef)}
             </div>
         </div>

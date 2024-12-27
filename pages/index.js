@@ -1,6 +1,7 @@
 import NavBar from "@/components/navBar";
 import HomePage from "@/components/homePage";
 import SparkBackground from "@/components/sparkEffect";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
         
       </div>
       </SparkBackground>
+      <Footer />
     </div>
   );
 }

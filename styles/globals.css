@@ -8,18 +8,6 @@
   --NeutralColour: #FFFFC7;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #1A1423;
-    --foreground: #3D314A;
-    --midColour: #684756;
-    --accentColour: #E3B23C;
-    --NeutralColour: #FFFFC7;
-  }
-}
-
-
-
 body {
   color: var(--midColour);
   background: var(--background);
@@ -60,6 +48,11 @@ p {
 }
 
 .NavBar {
+  padding: 1rem;
+  background-color: var(--foreground);  
+}
+
+.footer {
   padding: 1rem;
   background-color: var(--foreground);  
 }
@@ -129,6 +122,15 @@ p {
 .carouselContainer {
   scrollbar-width: thin;
   scrollbar-color: #E3B23C #3D314A;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+.socials a{
+  color: var(--accentColour);
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {

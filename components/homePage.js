@@ -6,7 +6,7 @@ import Skills from '@/components/skills';
 
 export default function HomePage() {
     return (
-    <div class="content">
+    <div className="content">
         <SparkBackground />
         <Grid container spacing={2} style={{ height: '50vh' }}>
             <Grid size={6} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
