@@ -48,7 +48,7 @@ p {
 }
 
 .NavBar {
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: var(--foreground);  
 }
 
@@ -130,7 +130,7 @@ p {
 }
 
 .footer {
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: var(--foreground);  
   text-align: center;
 }
@@ -172,6 +172,9 @@ p {
   .factDetails{
     font-size: 0.8rem;
   }
+  .NavBar {
+    padding: 1rem;
+  }
   .NavBar a{
     font-size: 1rem;
   }
@@ -183,6 +186,7 @@ p {
   }
   .footer{
     text-align: left;
+    padding: 1rem;
   }
   .socials{
     justify-content: flex-start;

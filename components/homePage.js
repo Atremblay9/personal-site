@@ -3,6 +3,7 @@ import SparkBackground from '@/components/sparkEffect';
 import Grid from '@mui/material/Grid2';
 import ProjectCards from '@/components/projectCards';
 import Skills from '@/components/skills';
+import Resume from '@/components/resume';
 
 export default function HomePage() {
     return (
@@ -18,7 +19,7 @@ export default function HomePage() {
             </Grid>
             
         </Grid>
-        
+        <Resume />
         <Grid container spacing={3} style={{margin: '0, auto' }} >
             <Grid size={{xs: 12, sm: 6}} style={{ padding: '1rem' }}>
                 <h3>Overview of Me </h3>

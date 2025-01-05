@@ -2,7 +2,7 @@ import NavBar from "@/components/navBar";
 import Footer from "@/components/footer";
 import SparkBackground from "@/components/sparkEffect";
 import Grid from '@mui/material/Grid2';
-
+import Resume from "@/components/resume";
 
 export default function Home() {
   return (
@@ -33,7 +33,9 @@ export default function Home() {
                 <button type="submit" className="submit-button">Submit</button>
             
             </form>
+            <Resume />
         </div>
+        
       </SparkBackground>
       <Footer />
     </div>

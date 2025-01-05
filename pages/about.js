@@ -1,6 +1,7 @@
 import NavBar from "@/components/navBar";
 import HomePage from "@/components/homePage";
 import SparkBackground from "@/components/sparkEffect";
+import Resume from "@/components/resume";
 
 export default function Home() {
   return (
@@ -22,8 +23,9 @@ export default function Home() {
         
         <h3>ASL and Deaf Culture Studies Certificate</h3> 
         <p>Vancouver Community College - 2021</p>
-        
+        <Resume />
       </div>
+      
       </SparkBackground>
     </div>
   );
