@@ -21,7 +21,7 @@ export default function NavBar() {
         <nav className="NavBar">
             <Grid container spacing={2} style={{ maxWidth: '1200px', margin: '1rem auto', justifyContent: 'space-between' }}>
                 <Grid size={{ xs: 10, sm: 4 }} style={{ textAlign: 'left', display: 'flex', alignItems: 'center' }}>
-                    <a href="/">AmTrem.dev</a>
+                    <a href="/">Amélie Tremblay</a>
                 </Grid>
                 {isMobile ? (
                     <Grid size={2} style={{ textAlign: 'right' }}>
