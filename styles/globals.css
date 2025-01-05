@@ -63,7 +63,7 @@ p {
   display: flex;
   justify-content: center; 
   align-items: center;  
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: #3D314A; 
   border-radius: 8px;        
   overflow: hidden;                         
@@ -83,14 +83,14 @@ p {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  margin: 1rem, auto;
+  margin: 0.5rem, auto;
 }
 
 .websiteLinks a{
   color: var(--accentColour);
   background-color: var(--foreground);
   text-decoration: none;
-  padding: 1rem;
+  padding: 0.5rem;
   border-radius: 8px;
 }
 
@@ -120,14 +120,24 @@ p {
   scrollbar-color: #E3B23C #3D314A;
 }
 
+.submit-button {
+  background-color: var(--foreground);
+  color: var(--accentColour);
+  border: none;
+  padding: 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
 .footer {
   padding: 1rem;
   background-color: var(--foreground);  
+  text-align: center;
 }
 
 .footer p {
   color: var(--accentColour);
+  font-size: 1rem;
 }
 
 .footer .footerInfo {
@@ -135,6 +145,7 @@ p {
 }
 .socials {
   display: flex;
+  justify-content: center;
   gap: 1rem;
 }
 .socials a{
@@ -142,29 +153,44 @@ p {
   text-decoration: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 600px) {
   h1{
-    font-size: 4rem;
-  }
-  h2{
     font-size: 3rem;
   }
+  h2{
+    font-size: 2.5rem;
+  }
   h3{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   p{
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .factTitle{
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .factDetails{
-    font-size: 1.2rem;
+    font-size: 0.8rem;
   }
   .NavBar a{
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
   .websiteLinks a{
-    font-size: 1.5rem;
+    font-size: 1rem;
+  }
+  .footer p{
+    font-size: 1rem;
+  }
+  .footer{
+    text-align: left;
+  }
+  .socials{
+    justify-content: flex-start;
+  }
+  .websiteCard { 
+    padding: 1rem;
+  }
+  .websiteLinks a{
+    padding: 1rem;
   }
 }

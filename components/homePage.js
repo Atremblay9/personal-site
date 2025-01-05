@@ -7,7 +7,7 @@ import Skills from '@/components/skills';
 export default function HomePage() {
     return (
     <div className="content">
-        <SparkBackground />
+        
         <Grid container spacing={2} style={{ height: '50vh' }}>
             <Grid size={6} style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
                 <h1 style={{ margin: 0 }}>Amélie Tremblay</h1>
@@ -20,14 +20,14 @@ export default function HomePage() {
         </Grid>
         
         <Grid container spacing={3} style={{margin: '0, auto' }} >
-            <Grid size={6} style={{ padding: '1rem' }}>
+            <Grid size={{xs: 12, sm: 6}} style={{ padding: '1rem' }}>
                 <h3>Overview of Me </h3>
                 <p>Full-Stack Developer</p>
                 <p>A Proud French-Canadian based in Edmonton, Alberta. Currently in my final semester in the Nait's DMIT Computer Software development program.</p>
                 <p>Through this program, I have developed skills in Javascript, C#, SQL,  React,  Blazor Web Apps and Node.js</p>
                 <p>I am also involved in the Dev Edmonton community, working on open source projects like their website, working to create a more accessible community in Edmonton.</p>
             </Grid>
-            <Grid size={6} style={{ padding: '1rem' }}>
+            <Grid size={{xs: 12, sm: 6}} style={{ padding: '1rem' }}>
                 <FactsAboutMe />
             </Grid>
         </Grid>

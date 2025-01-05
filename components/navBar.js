@@ -21,7 +21,7 @@ export default function NavBar() {
         <nav className="NavBar">
             <Grid container spacing={2} style={{ maxWidth: '1200px', margin: '1rem auto', justifyContent: 'space-between' }}>
                 <Grid size={{ xs: 10, sm: 4 }} style={{ textAlign: 'left', display: 'flex', alignItems: 'center' }}>
-                    <a href="#">AmTrem.dev</a>
+                    <a href="/">AmTrem.dev</a>
                 </Grid>
                 {isMobile ? (
                     <Grid size={2} style={{ textAlign: 'right' }}>
@@ -36,10 +36,10 @@ export default function NavBar() {
                                 <ListItem button component="a" href="/about">
                                     <ListItemText primary="About" />
                                 </ListItem>
-                                <ListItem button component="a" href="#">
+                                <ListItem button component="a" href="/projects">
                                     <ListItemText primary="Projects" />
                                 </ListItem>
-                                <ListItem button component="a" href="#">
+                                <ListItem button component="a" href="/contact">
                                     <ListItemText primary="Contact" />
                                 </ListItem>
                             </List>
@@ -55,10 +55,10 @@ export default function NavBar() {
                                 <a href="/about">About</a>
                             </Grid>
                             <Grid sm={3} style={{ textAlign: 'left', display: 'flex', alignItems: 'center' }}>
-                                <a href="#" >Projects</a>
+                                <a href="/projects" >Projects</a>
                             </Grid>
                             <Grid sm={3} style={{ textAlign: 'left', display: 'flex', alignItems: 'center' }}>
-                                <a href="#" >Contact</a>
+                                <a href="/contact" >Contact</a>
                             </Grid>
                         </Grid>
                     </Grid>
