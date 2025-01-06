@@ -14,7 +14,6 @@ export default function ContactForm() {
  
   return (
     <form id="contact-form" name="contact" onSubmit={handleFormSubmit} >
-            
                 <Grid container spacing={2} style={{padding: '1rem 0'}}>
                     <Grid size={12}>
                     <label for="user-email" class="form-label">Your Email</label>
