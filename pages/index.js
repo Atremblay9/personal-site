@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <NavBar />
       <SparkBackground>
-      <div class="content">
+      <div className="content">
         
         <HomePage />
         
