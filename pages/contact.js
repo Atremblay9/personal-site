@@ -12,7 +12,7 @@ export default function Home() {
         <div class="content">
             <h2>Contact me!</h2>
             <p>Want to get in touch? Send me a message!</p>
-            <form id="contact-form" name="order" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+            <form id="contact-form" name="contact" method="POST" data-netlify="true" >
             
                 <Grid container spacing={2} style={{padding: '1rem 0'}}>
                     <Grid size={12}>
