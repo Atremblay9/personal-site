@@ -6,7 +6,7 @@ export function ContactForm() {
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
-    await fetch("/__forms.html", {
+    await fetch("/public/__forms.html", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
