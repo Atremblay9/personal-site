@@ -25,9 +25,10 @@ export default function ContactForm() {
  
   return (
     <form name="contact" onSubmit={handleFormSubmit} >
+      <input type="hidden" name="form-name" value="contact" />
                 <Grid container spacing={2} style={{padding: '1rem 0'}}>
                     <Grid size={12}>
-                    <label for="user-email" >Your Email</label>
+                    <label htmlFor="user-email" >Your Email</label>
                     </Grid>
                     <Grid size={12}>
                     <input type="email"  id="user-email" name="userEmail" placeholder="Enter your email" required style={{width: '50%'}} />
@@ -35,7 +36,7 @@ export default function ContactForm() {
                 </Grid>
                 <Grid container spacing={2} style={{padding: '1rem 0'}}>
                     <Grid size={12}>
-                    <label for="user-message" >Your Message</label>
+                    <label htmlFor="user-message" >Your Message</label>
                     </Grid>
                     <Grid size={12}>
                     <textarea id="user-message" name="userMessage" rows="6" required  style={{width: '100%'}} ></textarea>
