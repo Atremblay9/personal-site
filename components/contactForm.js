@@ -1,6 +1,6 @@
-"use client";
+import Grid from '@mui/material/Grid2';
  
-export function FeedbackForm() {
+export default function ContactForm() {
   const handleFormSubmit = async (event) => {
     event.preventDefault();
     const formData = new FormData(event.target);
