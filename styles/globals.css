@@ -6,6 +6,7 @@
   --midColour: #684756;
   --accentColour: #E3B23C;
   --NeutralColour: #FFFFC7;
+  --lighter: #E2AEDD;
 }
 
 body {
@@ -36,7 +37,7 @@ h3 {
 
 }
 p {
-  color: var(--midColour);
+  color: var(--lighter);
 
 }
 
