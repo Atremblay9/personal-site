@@ -16,6 +16,7 @@ return <div className="projectCards">
         <div className="projectCard">
             <h3>This Site</h3>
             <p>A portfolio website created to display my coding knowledge</p>
+            <WebsiteCard imgSrc="/img/.png" altContent="AmTrem.dev" siteLink="#" codeLink="https://github.com/Atremblay9/personal-site" />
         </div>
         <div className="projectCard">
             <h3>Gamers Of Dungeons and Dragons</h3>
