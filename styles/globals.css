@@ -154,6 +154,21 @@ p {
   text-decoration: none;
 }
 
+.input {
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.resume-download-button{
+  background-color: var(--foreground);
+  color: var(--accentColour);
+  border: none;
+  padding: 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+
+}
+
 @media (min-width: 600px) {
   h1{
     font-size: 3rem;

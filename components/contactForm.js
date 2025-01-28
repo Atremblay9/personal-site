@@ -1,5 +1,4 @@
 
-
 import Grid from '@mui/material/Grid2';
  
 export default function ContactForm() {
@@ -31,7 +30,7 @@ export default function ContactForm() {
                     <label htmlFor="user-email" >Your Email</label>
                     </Grid>
                     <Grid size={12}>
-                    <input type="email"  id="user-email" name="userEmail" placeholder="Enter your email" required style={{width: '50%'}} />
+                    <input type="email"  id="user-email" name="userEmail" placeholder="Enter your email" required style={{width: '50%'}} className="input"/>
                     </Grid>
                 </Grid>
                 <Grid container spacing={2} style={{padding: '1rem 0'}}>
@@ -39,7 +38,7 @@ export default function ContactForm() {
                     <label htmlFor="user-message" >Your Message</label>
                     </Grid>
                     <Grid size={12}>
-                    <textarea id="user-message" name="userMessage" rows="6" required  style={{width: '100%'}} ></textarea>
+                    <textarea id="user-message" name="userMessage" rows="6" required  style={{width: '100%'}}  className="input" ></textarea>
                     </Grid>
                 </Grid>
                 <button type="submit" className="submit-button">Submit</button>
