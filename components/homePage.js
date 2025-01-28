@@ -4,8 +4,14 @@ import Grid from '@mui/material/Grid2';
 import ProjectCards from '@/components/projectCards';
 import Skills from '@/components/skills';
 import Resume from '@/components/resume';
+import {useRouter} from "next/router"
 
 export default function HomePage() {
+    const Router = useRouter();
+    const pathName = Router.pathname;
+
+    console.log (pathName);
+
     return (
     <div className="content">
         
@@ -36,7 +42,7 @@ export default function HomePage() {
                 <Skills />
         </Grid>
         <h2>Projects</h2>
-        <ProjectCards />
+        <ProjectCards pathName={pathName} />
     </div>
     );
 }

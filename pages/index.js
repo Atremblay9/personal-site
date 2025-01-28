@@ -4,6 +4,7 @@ import SparkBackground from "@/components/sparkEffect";
 import Footer from "@/components/footer";
 
 export default function Home() {
+  
   return (
     <div>
       <NavBar />
