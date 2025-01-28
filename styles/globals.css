@@ -160,8 +160,8 @@ p {
 }
 
 .resume-download-button{
-  background-color: var(--foreground);
-  color: var(--accentColour);
+  background-color: var(--NeutralColour);
+  color: var(--background);
   border: none;
   padding: 0.75rem;
   border-radius: 8px;
