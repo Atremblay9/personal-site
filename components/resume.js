@@ -7,8 +7,8 @@ export default function Resume() {
             <h2>Resume</h2>
             <p>Want to download my resume? Click the button below:</p>
             <ResumeDownloadButton 
-                fileUrl="Resume.pdf"
-                fileName="Amélie_Tremblay_Resume.pdf"
+                fileUrl="AmélieTremblay-Resume.pdf"
+                fileName="AmélieTremblay-Resume.pdf"
             />
         </div>
     );

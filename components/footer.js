@@ -16,8 +16,6 @@ export default function Footer() {
                         <div className="socials">
                         <a href="https://www.linkedin.com/in/amelie-tremblay-8b5068293/"><i class="bi bi-linkedin"></i></a>
                         <a href="https://github.com/Atremblay9"><i class="bi bi-github"></i></a>
-                        <a href="https://www.facebook.com/profile.php?id=100009264626918"><i class="bi bi-facebook"></i></a>
-                        <a href="https://www.instagram.com/amelie_t2020/"><i class="bi bi-instagram"></i></a>
                         </div>
                     </Grid>      
                 </Grid>

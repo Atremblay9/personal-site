@@ -4,12 +4,12 @@ export default function FactsAboutMe() {
     const [expandedFact, setExpandedFact] = useState(null);
 
     const facts = [
-        { title: "Self-taught Musician", details: "I learned to play the guitar and piano by myself and am working to relearn the saxophone, an instrument I learned in Junior High" },
-        { title: "Multilingual", details: "I can speak multiple languages fluently, including English, French but have also learned ASL (American Sign Language) and Spanish" },
-        { title: "Animal Lover", details: "I adore animals, and have had a variety of pets: snakes, cats, dogs and mice" },
-        { title: "Video Game Enjoyer", details: "I love the peace of immersive RPGs and also enjoy more action packed FPS and indie horror games " },
-        { title: "Artist", details: "I enjoy painting, drawing, and digital art, using it as a way to relax and express myself" },
-        { title: "Lover of MTG and DND", details: "I love playing Magic: The Gathering and Dungeons & Dragons with friends. Both games challenge my strategic thinking and spark creativity, making every session an exciting and rewarding experience" },
+        { title: "Self-taught Musician + ", details: "I learned to play the guitar and piano by myself and am working to relearn the saxophone, an instrument I learned in Junior High" },
+        { title: "Multilingual + ", details: "I can speak multiple languages fluently, including English, French but have also learned ASL (American Sign Language) and Spanish" },
+        { title: "Animal Lover + ", details: "I adore animals, and have had a variety of pets: snakes, cats, dogs and mice" },
+        { title: "Video Game Enjoyer + ", details: "I love the peace of immersive RPGs and also enjoy more action packed FPS and indie horror games " },
+        { title: "Artist + ", details: "I enjoy painting, drawing, and digital art, using it as a way to relax and express myself" },
+        { title: "Lover of MTG and DND + ", details: "I love playing Magic: The Gathering and Dungeons & Dragons with friends. Both games challenge my strategic thinking and spark creativity, making every session an exciting and rewarding experience" },
     ];
 
     const toggleFact = (index) => {
