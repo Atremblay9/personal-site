@@ -25,8 +25,8 @@ return <div className="projectCards">
         </div>
         <div className="projectCard">
             <h3>Gamers Of Dungeons and Dragons</h3>
-            <p>Website I've created with a partner to help with functions in the Gamers of Dungeons and Dragons club I help run at NAIT. This site helps demonstrate my abilities with security and authentication, database work, and collaboration. Currently under maintenance for the addition of database so website is down.</p>
-            <WebsiteCard imgSrc="/img/GamersOfDndsite.png" altContent="GamersofDND" siteLink="#" codeLink="https://github.com/Atremblay9/dnd-website" />
+            <p>Website I've created with a partner to help with functions in the Gamers of Dungeons and Dragons club I help run at NAIT. This site helps demonstrate my abilities with security and authentication, database work, and collaboration. Currently under production</p>
+            <WebsiteCard imgSrc="/img/GamersOfDndsite.png" altContent="GamersofDND" siteLink="https://gamersofdnd.netlify.app/" codeLink="https://github.com/Atremblay9/dnd-website" />
         </div>
     </div>
 }
