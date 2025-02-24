@@ -3,15 +3,13 @@ import WebsiteCard from "./websiteCard"
 
 export default function ProjectCards({pathName}) {
 
-//use  the useContext to change the descritions depending on which page the user is on. IE, short description on home page, long description on project page
-
 
 if(pathName == "/"){
 
 return <div className="projectCards">
         <div className="projectCard">
             <h3>Capstone Project</h3>
-            <p>Currently working on my final project through NAIT. I am working with a variety of new and interesting software with focus on AI. See my project page for a grander description</p>
+            <p>Currently working on my final project through NAIT. I am working with a variety of new and interesting software with focus on AI. See my project page for a grander description.</p>
         </div>
         <div className="projectCard">
             <h3>JustMeJuliag.com</h3>
@@ -20,12 +18,12 @@ return <div className="projectCards">
         </div>
         <div className="projectCard">
             <h3>This Site</h3>
-            <p>A portfolio website created to display my coding knowledge</p>
-            <WebsiteCard imgSrc="/img/amtrem.devtempimg.png" altContent="AmTrem.dev" siteLink="#" codeLink="https://github.com/Atremblay9/personal-site" />
+            <p>A portfolio website created to display my coding knowledge.</p>
+            <WebsiteCard imgSrc="/img/amtrem.png" altContent="AmTrem.dev" siteLink="#" codeLink="https://github.com/Atremblay9/personal-site" />
         </div>
         <div className="projectCard">
             <h3>Gamers Of Dungeons and Dragons</h3>
-            <p>Website I've created with a partner to help with functions in the Gamers of Dungeons and Dragons club I help run at NAIT. This site helps demonstrate my abilities with security and authentication, database work, and collaboration. Currently under production</p>
+            <p>Website I've created with a partner to help with functions in the Gamers of Dungeons and Dragons club I help run at NAIT. This site helps demonstrate my abilities with security and authentication, database work, and collaboration. Currently under production.</p>
             <WebsiteCard imgSrc="/img/GamersOfDndsite.png" altContent="GamersofDND" siteLink="https://gamersofdnd.netlify.app/" codeLink="https://github.com/Atremblay9/dnd-website" />
         </div>
     </div>
@@ -44,11 +42,11 @@ else{
         <div className="projectCard">
             <h3>This Site</h3>
             <p>A portfolio website created to display my coding knowledge</p>
-            <WebsiteCard imgSrc="/img/.png" altContent="AmTrem.dev" siteLink="#" codeLink="https://github.com/Atremblay9/personal-site" />
+            <WebsiteCard imgSrc="/img/amtrem.png" altContent="AmTrem.dev" siteLink="#" codeLink="https://github.com/Atremblay9/personal-site" />
         </div>
         <div className="projectCard">
             <h3>Gamers Of Dungeons and Dragons</h3>
-            <p>Website I've created with a partner to help with functions in the Gamers of Dungeons and Dragons club I help run at NAIT. This site helps demonstrate my abilities with security and authentication, database work, and collaboration. Currently under maintenance for the addition of database so website is down.</p>
+            <p>Website I've created with a partner to help with functions in the Gamers of Dungeons and Dragons club I help run at NAIT. This site helps demonstrate my abilities with security and authentication, database work, and collaboration. Currently in development.</p>
             <WebsiteCard imgSrc="/img/GamersOfDndsite.png" altContent="GamersofDND" siteLink="#" codeLink="https://github.com/Atremblay9/dnd-website" />
         </div>
     </div>

@@ -169,6 +169,11 @@ p {
 
 }
 
+.projectlink{
+  color: var(--accentColour);
+  text-decoration: none;
+}
+
 @media (min-width: 600px) {
   h1{
     font-size: 3rem;

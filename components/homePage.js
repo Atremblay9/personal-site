@@ -41,7 +41,9 @@ export default function HomePage() {
         <Grid size={12}>
                 <Skills />
         </Grid>
-        <h2>Projects</h2>
+        <div>
+            <a href="/projects" className="projectLink"><h2># Projects</h2></a>
+        </div>
         <ProjectCards pathName={pathName} />
     </div>
     );

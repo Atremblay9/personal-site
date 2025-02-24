@@ -16,7 +16,7 @@ export default function Home() {
       <NavBar />
       <SparkBackground>
         <div class="content">
-          <h2>Projects</h2>
+          <h2>Projects</h2> 
           <ProjectCards pathName={pathName} />
           <Resume />
         </div>
