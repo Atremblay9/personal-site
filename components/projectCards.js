@@ -32,7 +32,7 @@ else{
     return <div className="projectCards">
         <div className="projectCard">
             <h3>Capstone Project</h3>
-            <p>Though I can't share the code itself, my current capstone project (final project), has me working with a variety of new languages and software. This project uses python to run the backend, currently connected to a Neo4j Database through Django. My team is currently working to transfer from Django to FastAPI and the focus on this project is AI interaction through a chat bot that analyses the Database to respond with accurate data. We are focusing heavily on prompt generation and improving the current algorithm for faster and better responses. </p>
+            <p>Though I can't share the code itself, my current capstone project (final project), has me working with a variety of new languages and software. This project uses python to run the backend, currently connected to an sql database through FastAPI, hosted on Supabase. The focus of this project is AI interaction through a chat bot that analyses the Database to respond with accurate data. My team and I are focusing heavily on prompt generation and improving the current algorithm for faster and better responses. </p>
         </div>
         <div className="projectCard">
             <h3>JustMeJuliag.com</h3>
