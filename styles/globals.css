@@ -60,6 +60,15 @@ p {
   margin: 0 auto;
 }
 
+.headshot{
+  width: 100%; 
+  border-radius: 50%;
+  object-fit: cover;
+  max-width: 450px;
+  margin: auto;
+  display: block;
+}
+
 .websiteCard {
   display: flex;
   justify-content: center; 
@@ -191,7 +200,7 @@ p {
     font-size: 1.5rem;
   }
   .factDetails{
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .NavBar {
     padding: 1rem;

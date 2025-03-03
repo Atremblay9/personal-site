@@ -21,7 +21,7 @@ export default function HomePage() {
                 <h2 style={{ margin: 0 }}>Software Developer</h2>
             </Grid>
             <Grid size={6}>
-                <img src="/img/headshot.jpg" alt="Amélie Tremblay" style={{ width: '100%', height: '100%',borderRadius:'50%', objectFit: 'cover' }} />
+                <img src="/img/headshot.jpg" alt="Amélie Tremblay" className="headshot"/>
             </Grid>
             
         </Grid>

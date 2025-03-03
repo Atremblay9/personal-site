@@ -66,8 +66,8 @@ export default function Skills() {
                 scrollBehavior: "smooth",
                 padding: "1rem 0",
                 gap: "1rem",
-                scrollbarWidth: "thin", // For Firefox
-                scrollbarColor: "#E3B23C #3D314A", // Thumb and track colors for Firefox
+                scrollbarWidth: "thin", 
+                scrollbarColor: "#E3B23C #3D314A", 
             }}
             className="carouselContainer"
         >
@@ -76,7 +76,7 @@ export default function Skills() {
                     key={index}
                     style={{
                         flex: "0 0 auto",
-                        width: "100px", // Adjusted size
+                        width: "100px", 
                         textAlign: "center",
                         color: "#3D314A",
                     }}
@@ -85,7 +85,7 @@ export default function Skills() {
                         src={item.imglink}
                         alt={item.alt}
                         style={{
-                            maxWidth: "80%", // Adjusted image size
+                            maxWidth: "80%",
                             height: "auto",
                             marginBottom: "0.5rem",
                         }}
