@@ -9,7 +9,7 @@ if(pathName == "/"){
 return <div className="projectCards">
         <div className="projectCard">
             <h3>Capstone Project</h3>
-            <p>Currently working on my final project through NAIT. I am working with a variety of new and interesting software with focus on AI. See my project page for a grander description.</p>
+            <p>Currently working on my final project through NAIT with a variety of new and interesting software with focus on AI. See my project page for a grander description.</p>
         </div>
         <div className="projectCard">
             <h3>JustMeJuliag.com</h3>
